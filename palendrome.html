@@ -1,0 +1,26 @@
+<script>
+var str=prompt("enter the string to check whether the string is palendrome or not");
+let arr= str.split("");
+let text = "";
+let i;
+for (i = 0; i < arr.length; i++) {
+  text += arr[i] + "<br>"
+}
+document.write(text);
+let reversearr= str.split("");
+let txt="";
+let j;
+for(j=reversearr.length-1; j>=0;j--){
+  txt += arr[j] + "<br>";
+}
+document.write(txt);
+
+if(text===txt)
+{
+  document.write("string is a palendrome")
+}
+else {
+  document.write("not a palendrome")
+}
+
+</script>
